@@ -55,12 +55,55 @@ I always have had the intention of building a blog and at one point had started 
 
 Name: Visionary Creatives
 Resume: LLC Site - should this be included?
-Contact Information: email - chris@thevisioncreatives (info@thevisioncreatives) (702) 462-4682
+Contact Information:
+
+- email: chris@thevisioncreatives
+- second email: info@thevisioncreatives
+- Phone: (702) 462-4682
+
 Location: Las Vegas, Nevada
 
 ### Portfolio Images
 
 Have multiple existing full build websites with images already for portfolio. Will also be highlighting a live chat vue application, my capstone project, and a plugin for video upload and voting.
+
+#### <b>Better Value Homes</b>
+
+- This full site was created as an informational site to drive home buyers to the respective information they needed for a new build. It is complete with full custom filtering and sorting based off what the user is looking for.
+  ![Better Value Homes](bvh-1.png)
+
+#### <b>Fallen Not Forgotten</b>
+
+- FNF is the eccommerce portion of a not for profit site. This site was created with a portion of each sale going to benefit the families of those who fell in the line of duty. This is a full eccommerce implementation with hundreds of products with multiple variations.
+  ![Fallen Not Forgotten](fnf-1.png)
+
+#### <b>Instock Specialties</b>
+
+- Instock specialties is an informational site for business to business. They specialize in building fixtures and amentities. This site was created to organize those by category and
+  ![Instock Specialties](is-1.png)
+
+#### <b>JAV Imagery</b>
+
+- This is an informational site that was created to give employees a way to apply for and check on their existing applications. It gives information about the company and what to expect in one of the positions.
+  ![Jav Imagery](jav-1.png)
+
+#### <b>Know Where To Run</b>
+
+- This site is a marathon tracking system. It is integrated using APIs to allow the users to register directly on the website for the respective marathon they are looking for. Users can search for these races in various ways whether by state, name, length, or even international.
+  ![Know Where To Run](know-1.png)
+
+#### <b>Pro Flat Fee</b>
+
+- This is a design illustration of the car wrap that was created for use for this real estate company. The design was implemented and can still be seen driving around in Minnesota.
+  ![Pro Flat Fee](pff-1.png)
+
+#### <b>Swapemon</b>
+
+- This project was built using React and Redux to give users better ability to manage and trade their pokemon to other users. It is complete with user chat as well to discuss potential trades.
+
+![Swapemon](swap-1.png)
+
+I will also be adding some additional images and projects, potentially working snippets from other projects. These projects will illustrate the use of newer technologies such as vue and react. I need to check whether I can use the code directly or if I need to edit it because it may be exclusive. Specifically there is a site that is scraping inputs from indeed and showing all of their clients' job postings using react and custom rss feed. Another is a custom react project consuming a video api from youtube to present the client's videos utilizing a playlist and slider. Another using Vue.js and Firebase to allow users to upload videos, vote and comment and award winners (think American Idol meets battle of the bands meets YouTube). The last project would be a project tracking application utilizing react to give the user project upload with full CRUD capabilities. I should have these answers in the coming week and either begin refactoring the code to make them brandless or include them directly.
 
 ## Citations
 
