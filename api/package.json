@@ -1,0 +1,28 @@
+{
+	"name": "api",
+	"version": "1.0.0",
+	"description": "api for VCL",
+	"main": "server.js",
+	"scripts": {
+		"db-update": "sequelize db:migrate:undo:all && sequelize db:migrate",
+		"db-seed": "sequelize db:seed:all",
+		"server": "nodemon server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Christopher Hitchcock",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"debug": "^4.3.1",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"morgan": "^1.10.0",
+		"morgan-debug": "^2.0.0",
+		"mysql": "^2.18.1",
+		"mysql2": "^2.2.5",
+		"sequelize": "^6.5.0",
+		"sequelize-cli": "^6.2.0",
+		"uuid": "^8.3.2"
+	}
+}
