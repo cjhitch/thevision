@@ -100,7 +100,7 @@ const Footer = () => {
 			</Container>
 			<Row>
 				<p
-					className={`${styles.footerText} text-center bg-dark-0 w-100 mb-0`}
+					className={`${styles.footerText} text-center bg-dark-0 w-100 mb-0 py-3`}
 				>
 					&copy; {date.getFullYear()} Visionary Creatives, All Rights
 					Reserved
