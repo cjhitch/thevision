@@ -1,4 +1,5 @@
 @import '../../assets/scss/colors';
+@import '../../assets/scss/mixins';
 .Footer {
 	color: $dark_4;
 	div {
@@ -7,6 +8,7 @@
 				margin-bottom: 0;
 			}
 			a {
+				@include link($dark_4, $secondary);
 				color: $dark_4;
 				display: block;
 				text-decoration: none;
@@ -50,24 +52,27 @@
 }
 .button {
 	margin-top: 1.25rem;
-	background: linear-gradient(
-		to right,
-		$secondary,
-		$secondary 50%,
-		transparent 50%
-	);
-	border-left-width: 7px;
-	// -webkit-text-fill-color: transparent;
-	// background-clip: text;
-	background-size: 200% 100%;
-	background-position: 100%;
-	transition: background-position 500ms ease;
-	&:hover {
-		background-color: inherit;
-		background-position: 0 100%;
-		transition: background-position 500ms ease;
-	}
+	@include btn(transparent, $secondary);
 }
 .padSection {
 	padding: 8rem 0;
+	@include mq('md-down') {
+		padding: 4rem 0;
+		> div {
+			section {
+				&:nth-of-type(n + 3) {
+					margin-top: 2.5rem;
+				}
+			}
+		}
+	}
+	@include mq('sm-down') {
+		> div {
+			section {
+				&:nth-of-type(n + 2) {
+					margin-top: 2.5rem;
+				}
+			}
+		}
+	}
 }

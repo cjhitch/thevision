@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Row, Col, Button } from 'react-bootstrap';
@@ -14,7 +13,7 @@ const Footer = () => {
 			<Container className={styles.padSection}>
 				<h2 className="sr-only">Footer</h2>
 				<Row as="div">
-					<Col as="section">
+					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="sr-only">Logo</h3>
 						<Image src="/logo-dark.svg" width={190} height={65} />
 						<p className="mt-md-4">
@@ -45,25 +44,34 @@ const Footer = () => {
 							</Link>
 						</div>
 					</Col>
-					<Col as="section">
+					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="h5 text-white">Get In Touch</h3>
 						<Hr variant="secondary" />
-						<Link href="">
+						<Link href="tel:+17024624682">
 							<a className={styles.a}>
-								<i className="fal fa-phone-alt mr-2" />
+								<i
+									aria-hidden
+									className="fal fa-phone-alt mr-2"
+								/>
 								(702) 462 - 4682
 							</a>
 						</Link>
-						<Link href="">
+						<Link href="mailto:info@thevisioncreatives.com">
 							<a className={styles.a}>
-								<i className="fal fa-envelope-open mr-2" /> Send
-								eMail
+								<i
+									aria-hidden
+									className="fal fa-envelope-open mr-2"
+								/>
+								Send email
 							</a>
 						</Link>
-						<Link href="">
+						<Link href="https://goo.gl/maps/ApaZJH5eu8URABww8">
 							<a className={styles.a}>
-								<i className="fal fa-compass mr-2" /> Las Vegas,
-								Nevada
+								<i
+									aria-hidden
+									className="fal fa-compass mr-2"
+								/>
+								Las Vegas, Nevada
 							</a>
 						</Link>
 						<Button
@@ -73,7 +81,7 @@ const Footer = () => {
 							Send a Message
 						</Button>
 					</Col>
-					<Col as="section">
+					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="h5 text-white">Quick Links</h3>
 						<Hr variant="secondary" />
 						<Link href="#">
@@ -92,8 +100,8 @@ const Footer = () => {
 							<a className={styles.a}>Terms & Conditions</a>
 						</Link>
 					</Col>
-					<Col as="section" className="h5 text-white">
-						Recent Posts
+					<Col xs={12} sm={6} lg={3} as="section">
+						<h3 className="h5 text-white">Recent Posts</h3>
 						<Hr variant="secondary" />
 					</Col>
 				</Row>

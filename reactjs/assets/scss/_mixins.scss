@@ -1,0 +1,66 @@
+@mixin btn($first, $second) {
+	background: linear-gradient(to right, $second, $second 50%, $first 50%);
+	border-left-width: 7px;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 500ms ease;
+	&:hover {
+		background-color: inherit;
+		background-position: 0 100%;
+		transition: background-position 500ms ease;
+	}
+}
+@mixin link($first, $second) {
+	color: $first;
+	display: block;
+	text-decoration: none;
+	overflow: hidden;
+	background: linear-gradient(to right, $second, $second 50%, $first 50%);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 500ms ease;
+	&:hover {
+		background-position: 0 100%;
+		transition: background-position 500ms ease;
+	}
+}
+
+@mixin mq($size) {
+	@if $size == xs {
+		@content;
+	} @else if $size == sm {
+		@media (min-width: 36rem) {
+			@content;
+		}
+	} @else if $size == md {
+		@media (min-width: 48rem) {
+			@content;
+		}
+	} @else if $size == lg {
+		@media (min-width: 62rem) {
+			@content;
+		}
+	} @else if $size == xs-only {
+		@media (max-width: 35.9375rem) {
+			@content;
+		}
+	} @else if $size == sm-down {
+		@media (max-width: 47.9375rem) {
+			@content;
+		}
+	} @else if $size == sm-only {
+		@media (min-width: 36rem) and (max-width: 47.9375rem) {
+			@content;
+		}
+	} @else if $size == md-down {
+		@media (max-width: 61.9375rem) {
+			@content;
+		}
+	} @else if $size == md-only {
+		@media (min-width: 48rem) and (max-width: 61.9375rem) {
+			@content;
+		}
+	}
+}

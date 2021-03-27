@@ -1,0 +1,68 @@
+@import '../../assets/scss/colors';
+@import '../../assets/scss/mixins';
+.Header {
+	padding: 1.5rem 2.5rem;
+	border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
+	position: absolute;
+	width: 100%;
+}
+.nav {
+	padding: 0;
+}
+.button {
+	@include btn(transparent, $secondary);
+}
+.link {
+	@include link($light_0, $secondary);
+	margin: 0 1rem;
+	font-weight: 700;
+}
+.form {
+	position: absolute;
+	right: 7.75rem;
+	width: 0;
+	padding: 0;
+	background: transparent;
+	overflow: hidden;
+	transition: width 500ms ease;
+	transition: background-color 0.5s ease;
+}
+.sticky {
+	background: $dark_0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	border: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	transition: background-color 0.5s ease;
+}
+.modal {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	max-width: unset;
+	> div {
+		background-color: $dark_1;
+		height: 100%;
+		div {
+			border: none;
+			button {
+				span {
+					color: $light_0;
+				}
+			}
+			&:nth-of-type(2) {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				a {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
