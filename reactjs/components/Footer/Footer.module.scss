@@ -1,18 +1,30 @@
 @import '../../assets/scss/colors';
 .Footer {
 	color: $dark_4;
-	> div {
-		padding: 8rem 0;
+	div {
 		div {
 			h3 {
-				margin-bottom: 1.5rem;
+				margin-bottom: 0;
 			}
 			a {
 				color: $dark_4;
 				display: block;
 				text-decoration: none;
+				overflow: hidden;
+				background: linear-gradient(
+					to right,
+					$secondary,
+					$secondary 50%,
+					$dark_4 50%
+				);
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				background-size: 200% 100%;
+				background-position: 100%;
+				transition: background-position 500ms ease;
 				&:hover {
-					color: $secondary;
+					background-position: 0 100%;
+					transition: background-position 500ms ease;
 				}
 			}
 		}
@@ -33,5 +45,29 @@
 		}
 	}
 }
-.touch {
+.a {
+	margin-bottom: 1rem;
+}
+.button {
+	margin-top: 1.25rem;
+	background: linear-gradient(
+		to right,
+		$secondary,
+		$secondary 50%,
+		transparent 50%
+	);
+	border-left-width: 7px;
+	// -webkit-text-fill-color: transparent;
+	// background-clip: text;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 500ms ease;
+	&:hover {
+		background-color: inherit;
+		background-position: 0 100%;
+		transition: background-position 500ms ease;
+	}
+}
+.padSection {
+	padding: 8rem 0;
 }

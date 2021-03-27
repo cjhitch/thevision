@@ -7,6 +7,10 @@ export default function Home() {
 			<Head>
 				<title>Create Next App</title>
 				<link rel="icon" href="/favicon.ico" />
+				<script
+					src="https://kit.fontawesome.com/c61156b3af.js"
+					crossOrigin="anonymous"
+				/>
 			</Head>
 
 			<main className={styles.main}>
