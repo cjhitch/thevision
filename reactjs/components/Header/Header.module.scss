@@ -1,0 +1,32 @@
+@import '../../assets/scss/colors';
+.Header {
+	padding: 1.5rem 2.5rem;
+	border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
+	position: absolute;
+	width: 100%;
+}
+.nav {
+	padding: 0;
+}
+.form {
+	position: absolute;
+	right: 7.75rem;
+	width: 0;
+	padding: 0;
+	background: transparent;
+	overflow: hidden;
+	transition: width 500ms ease;
+	transition: background-color 0.5s ease;
+}
+.sticky {
+	background: $dark_0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	border: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	transition: background-color 0.5s ease;
+}

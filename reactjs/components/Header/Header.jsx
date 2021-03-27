@@ -1,33 +1,31 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Navbar, Nav, Button, Form, FormControl, Modal } from 'react-bootstrap';
-import './Header.module.scss';
+import styles from './Header.module.scss';
 
-const Header = () => {
+const Header = ({ scroll }) => {
 	const [show, setShow] = useState(false);
 	return (
-		<>
-			<Navbar expand="lg">
+		<header className={`${styles.Header} ${scroll ? styles.sticky : ''}`}>
+			<Navbar className={styles.nav}>
 				<Navbar.Brand href="#home">
-					<Image src="/logo.svg" width={190} height={65} />
+					<Image src="/logo-dark.svg" width={190} height={65} />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="mx-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#link">Link</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>
-				<div className="d-none d-md-block">
+				<Nav className="mx-auto d-none d-lg-flex">
+					<Nav.Link href="#home">Home</Nav.Link>
+					<Nav.Link href="#link">Link</Nav.Link>
+				</Nav>
+				<div className="d-none d-lg-flex">
 					<Form inline>
-						<FormControl
-							type="text"
-							placeholder="Search"
-							className="mr-sm-2"
-						/>
 						<Button variant="link">
 							<i aria-hidden className="fal fa-search" />
 						</Button>
+						<FormControl
+							type="text"
+							placeholder="Search"
+							className={`${styles.form} mr-sm-2`}
+						/>
 					</Form>
 					<Button variant="secondary">Let&#39;s Begin</Button>
 				</div>
@@ -56,7 +54,7 @@ const Header = () => {
 					</p>
 				</Modal.Body>
 			</Modal>
-		</>
+		</header>
 	);
 };
 
