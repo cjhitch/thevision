@@ -50,6 +50,25 @@ const Footer = () => {
 				<FiMail /> info@theVisionCreatives.com
 				<FiCompass /> Las Vegas, Nevada
 			</section>
+			<section>
+				<h3 className="h5 text-white">Quick Links</h3>
+				<Link href="#">
+					<a>Services</a>
+				</Link>
+				<Link href="#">
+					<a>Reviews</a>
+				</Link>
+				<Link href="#">
+					<a>Faq</a>
+				</Link>
+				<Link href="#">
+					<a>Privacy Policy</a>
+				</Link>
+				<Link href="#">
+					<a>Terms & Conditions</a>
+				</Link>
+			</section>
+			<section className="h5 text-white">Recent Posts</section>
 		</footer>
 	);
 };
