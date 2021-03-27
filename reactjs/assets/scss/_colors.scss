@@ -1,0 +1,190 @@
+/* Primary / Main Color */
+$primary: #6bc4e8;
+/* Primary / Darker */
+$primary_darker: #30acde;
+/* Primary / Lighter */
+$primary_lighter: #88cfec;
+/* Primary / Subtle */
+$primary_subtle: #ccddff;
+
+/* Secondary / Main */
+$secondary: #ed40a9;
+/* Secondary / Darker */
+$secondary_darker: #dc148d;
+/* Secondary / Lighter */
+$secondary_lighter: #f066ba;
+/* Secondary / Subtle */
+$secondary_subtle: #f8bee1;
+
+/* Tertiary / Main */
+$tertiary: #ea0029;
+/* Tertiary / Darker */
+$tertiary_darker: #bb0020;
+/* Tertiary / Lighter */
+$tertiary_lighter: #ff3054;
+/* Tertiary / Light */
+$tertiary_light: #ffa1b1;
+/* Tertiary / Subtle */
+$tertiary_subtle: #fee3e8;
+
+/* Dark / Dark Main */
+$dark_primary: #98989a;
+/* Dark / Dark 0 */
+$dark_0: #1c1c28;
+/* Dark / Dark 1 */
+$dark_1: #28293d;
+/* Dark / Dark 2 */
+$dark_2: #555770;
+/* Dark / Dark 3 */
+$dark_3: #606170;
+/* Dark / Dark 4 */
+$dark_4: #8f90a6;
+/* Dark / Dark 5 */
+$dark_5: #c7c9d9;
+
+/* Light / Light 0 */
+$light_0: #e4e4e4;
+/* Light / Light 1 */
+$light_1: #ebebf0;
+/* Light / Light 2 */
+$light_2: #f2f2f5;
+/* Light / Light 3 */
+$light_3: #fafafc;
+/* Light / Light 4 */
+$light_4: #ffffff;
+
+/* Blue / Blue 0 */
+$blue_0: #1b4db0;
+/* Blue / Blue 1 */
+$blue_1: #306ade;
+/* Blue / Blue 2 */
+$blue_2: #6b95e8;
+/* Blue / Blue 3 */
+$blue_3: #90afed;
+/* Blue / Blue 4 */
+$blue_4: #ccdaf7;
+
+/* Teal / Teal 0 */
+$teal_0: #00b7c4;
+/* Teal / Teal 1 */
+$teal_1: #00cfde;
+/* Teal / Teal 2 */
+$teal_2: #73dfe7;
+/* Teal / Teal 3 */
+$teal_3: #a9eff2;
+/* Teal / Teal 4 */
+$teal_4: #e6ffff;
+
+/* Green / Green 0 */
+$green_0: #3bb01b;
+/* Green / Green 1 */
+$green_1: #56de30;
+/* Green / Green 2 */
+$green_2: #86e86b;
+/* Green / Green 3 */
+$green_3: #a4ed90;
+/* Green / Green 4 */
+$green_4: #d5f7cc;
+
+/* Yellow / Yellow 0 */
+$yellow_0: #e6b800;
+/* Yellow / Yellow 1 */
+$yellow_1: #ffcc00;
+/* Yellow / Yellow 2 */
+$yellow_2: #fddd48;
+/* Yellow / Yellow 3 */
+$yellow_3: #fded72;
+/* Yellow / Yellow 4 */
+$yellow_4: #fffee6;
+
+/* Orange / Orange 0 */
+$orange_0: #e67a00;
+/* Orange / Orange 1 */
+$orange_1: #ff8800;
+/* Orange / Orange 2 */
+$orange_2: #fdac42;
+/* Orange / Orange 3 */
+$orange_3: #fccc75;
+/* Orange / Orange 4 */
+$orange_4: #fff8e6;
+
+/* Purple / Purple 0 */
+$purple_0: #8f1bb0;
+/* Purple / Purple 1 */
+$purple_1: #b930de;
+/* Purple / Purple 2 */
+$purple_2: #cd6be8;
+/* Purple / Purple 3 */
+$purple_3: #d990ed;
+/* Purple / Purple 4 */
+$purple_4: #eeccf7;
+
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'success': $green_0,
+	'danger': $tertiary_darker,
+	'warning': $yellow_0,
+	'info': $teal_0,
+	'light': $light_3,
+	'dark': $dark_1,
+);
+
+// Create your own map
+$custom-colors: (
+	'dark-primary': $dark_primary,
+	'dark-0': $dark_0,
+	'dark-1': $dark_1,
+	'dark-2': $dark_2,
+	'dark-3': $dark_3,
+	'dark-4': $dark_4,
+	'dark-5': $dark_5,
+	'light-0': $light_0,
+	'light-1': $light_1,
+	'light-2': $light_2,
+	'light-3': $light_3,
+	'light-4': $light_4,
+	'primary-darker': $primary_darker,
+	'primary-lighter': $primary_lighter,
+	'primary-subtle': $primary_subtle,
+	'secondary-darker': $secondary_darker,
+	'secondary-lighter': $secondary_lighter,
+	'secondary-subtle': $secondary_subtle,
+	'tertiary-darker': $tertiary_darker,
+	'tertiary-lighter': $tertiary_lighter,
+	'tertiary-light': $tertiary_light,
+	'tertiary-subtle': $tertiary_subtle,
+	'blue-0': $blue_0,
+	'blue-1': $blue_1,
+	'blue-2': $blue_2,
+	'blue-3': $blue_3,
+	'blue-4': $blue_4,
+	'teal-0': $teal_0,
+	'teal-1': $teal_1,
+	'teal-2': $teal_2,
+	'teal-3': $teal_3,
+	'teal-4': $teal_4,
+	'green-0': $green_0,
+	'green-1': $green_1,
+	'green-2': $green_2,
+	'green-3': $green_3,
+	'green-4': $green_4,
+	'yellow-0': $yellow_0,
+	'yellow-1': $yellow_1,
+	'yellow-2': $yellow_2,
+	'yellow-3': $yellow_3,
+	'yellow-4': $yellow_4,
+	'orange-0': $orange_0,
+	'orange-1': $orange_1,
+	'orange-2': $orange_2,
+	'orange-3': $orange_3,
+	'orange-4': $orange_4,
+	'purple-0': $purple_0,
+	'purple-1': $purple_1,
+	'purple-2': $purple_2,
+	'purple-3': $purple_3,
+	'purple-4': $purple_4,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

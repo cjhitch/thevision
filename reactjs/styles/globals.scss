@@ -1,0 +1,44 @@
+@use '../assets/scss/colors';
+@import url('https://use.typekit.net/bns0hqn.css');
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: vox, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+.z-line {
+	z-index: 3;
+}
+
+$font-size-base: 1.125rem;
+$btn-border-radius-lg: 1.625rem;
+$btn-padding-x-lg: 4rem;
+
+@import '~bootstrap/scss/bootstrap';
