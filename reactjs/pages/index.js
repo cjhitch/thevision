@@ -21,8 +21,10 @@ export default function Home() {
 				<Head>
 					<title>Create Next App</title>
 					<link rel="icon" href="/favicon.ico" />
-					<script
-						src="https://kit.fontawesome.com/c61156b3af.js"
+					<link
+						rel="stylesheet"
+						href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+						integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB"
 						crossOrigin="anonymous"
 					/>
 				</Head>
