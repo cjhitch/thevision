@@ -9,13 +9,11 @@
 		"dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn start:react\"",
 		"eject": "react-scripts eject --prefix reactjs",
 		"format": "concurrently --kill-others-on-fail \"npm run format:react\" \"npm run format:api\"",
-		"format:broken": "cd api",
 		"format:api": "cd api && prettier --write \"./**/*.{js,jsx,json,css}\"",
 		"format:react": "cd reactjs && prettier --write \"src/**/*.{js,jsx,json,css}\"",
 		"install-reactjs": "yarn install --prefix reactjs",
 		"install-api": "yarn install --prefix api",
 		"lint": "concurrently --kill-others-on-fail \"npm run lint:react\" \"npm run lint:api\"",
-		"lint:broken": "cd reactjs",
 		"lint:api": "cd api && eslint \"./**/*.{js,jsx}\"",
 		"lint:react": "cd reactjs && eslint \"src/**/*.{js,jsx}\"",
 		"lint:fix": "concurrently --kill-others-on-fail \"npm run lint:fix:react\" \"npm run lint:fix:api\"",
@@ -33,8 +31,8 @@
 	},
 	"lint-staged": {
 		"./**/*.{js,jsx,json}": [
-			"npm run format:broken",
-			"npm run lint:broken"
+			"npm run format",
+			"npm run lint"
 		]
 	},
 	"husky": {
