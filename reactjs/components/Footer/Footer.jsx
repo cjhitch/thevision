@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import {
 	FiFacebook,
 	FiTwitter,
@@ -11,6 +11,7 @@ import {
 	FiPhone,
 	FiMail,
 } from 'react-icons/fi';
+import Hr from '../Hr';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -22,36 +23,54 @@ const Footer = () => {
 					<Col as="section">
 						<h3 className="sr-only">Logo</h3>
 						<Image src="/logo-dark.svg" width={190} height={65} />
-						<p>
+						<p className="mt-md-4">
 							Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit. Molestias odio neque doloribus harum?
 						</p>
-						<Link href="https://www.facebook.com">
-							<a>
-								<FiFacebook />
-							</a>
-						</Link>
-						<Link href="https://www.facebook.com">
-							<a>
-								<FiTwitter />
-							</a>
-						</Link>
-						<Link href="https://www.facebook.com">
-							<a>
-								<FiInstagram />
-							</a>
-						</Link>
-						<Link href="https://www.facebook.com">
-							<a>
-								<FiLinkedin />
-							</a>
-						</Link>
+						<div className={styles.social}>
+							<Link href="https://www.facebook.com">
+								<a className="d-inline-block">
+									<FiFacebook size="1.5rem" />
+								</a>
+							</Link>
+							<Link href="https://www.facebook.com">
+								<a className="d-inline-block">
+									<FiTwitter size="1.5rem" />
+								</a>
+							</Link>
+							<Link href="https://www.facebook.com">
+								<a className="d-inline-block">
+									<FiInstagram size="1.5rem" />
+								</a>
+							</Link>
+							<Link href="https://www.facebook.com">
+								<a className="d-inline-block">
+									<FiLinkedin size="1.5rem" />
+								</a>
+							</Link>
+						</div>
 					</Col>
-					<Col as="section">
+					<Col as="section" className={styles.touch}>
 						<h3 className="h5 text-white">Get In Touch</h3>
-						<FiPhone /> (702) 462 - 4682
-						<FiMail /> info@theVisionCreatives.com
-						<FiCompass /> Las Vegas, Nevada
+						<Hr variant="secondary" />
+						<Link href="">
+							<a>
+								<FiPhone /> (702) 462 - 4682
+							</a>
+						</Link>
+						<Link href="">
+							<a>
+								<FiMail /> info@theVisionCreatives.com
+							</a>
+						</Link>
+						<Link href="">
+							<a>
+								<FiCompass /> Las Vegas, Nevada
+							</a>
+						</Link>
+						<Button variant="outline-secondary">
+							Send a Message
+						</Button>
 					</Col>
 					<Col as="section">
 						<h3 className="h5 text-white">Quick Links</h3>
