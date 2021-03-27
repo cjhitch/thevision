@@ -1,0 +1,25 @@
+.Hr {
+	width: 4rem;
+	height: 0.1875rem;
+	margin-bottom: 1.25rem;
+}
+.left {
+	margin-left: 0;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.right {
+	margin-right: 0;
+}
+
+.secondary {
+	background: rgb(220, 20, 141);
+	background: linear-gradient(
+		90deg,
+		rgba(220, 20, 141, 1) 0%,
+		rgba(237, 64, 169, 1) 35%,
+		rgba(248, 190, 225, 1) 100%
+	);
+}
