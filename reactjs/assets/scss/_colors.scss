@@ -119,15 +119,24 @@ $purple_3: #d990ed;
 /* Purple / Purple 4 */
 $purple_4: #eeccf7;
 
+$success: $green_0;
+$danger: $tertiary_darker;
+$warning: $yellow_0;
+$info: $teal_0;
+$light: $light_3;
+$dark: $dark_1;
+
 $theme-colors: (
 	'primary': $primary,
 	'secondary': $secondary,
-	'success': $green_0,
-	'danger': $tertiary_darker,
-	'warning': $yellow_0,
-	'info': $teal_0,
-	'light': $light_3,
-	'dark': $dark_1,
+	'success': $success,
+	'danger': $danger,
+	'warning': $warning,
+	'info': $info,
+	'light': $light,
+	'dark': $dark,
+	'white': $light,
+	'black': $dark,
 );
 
 // Create your own map

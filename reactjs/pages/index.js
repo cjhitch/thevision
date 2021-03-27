@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -60,8 +59,6 @@ export default function Home() {
 					</a>
 				</div>
 			</main>
-
-			<Footer />
 		</div>
 	);
 }
