@@ -4,9 +4,11 @@ import styles from './Title.module.scss';
 const Title = ({ pre, preClass, title, titleClass, post, postClass, Tag }) => {
 	return (
 		<header className={styles.Title}>
-			<Tag className={titleClass || ''}>{title}</Tag>
-			{pre && <h3 className={preClass || ''}>{pre}</h3>}
-			{post && <p className={postClass || ''}>{pre}</p>}
+			<Tag className={`${styles.title} ${titleClass || ''}`}>{title}</Tag>
+			{pre && (
+				<h3 className={`${styles.pre} ${preClass || ''}`}>{pre}</h3>
+			)}
+			{post && <p className={`${styles.p} ${postClass || ''}`}>{pre}</p>}
 		</header>
 	);
 };
