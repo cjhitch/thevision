@@ -1,9 +1,13 @@
 import { Container } from 'react-bootstrap';
 import styles from './Section.module.scss';
 
-const Section = ({ children }) => {
+const Section = ({ children, fluid }) => {
 	return (
-		<Container as="section" className={styles.Section}>
+		<Container
+			as="section"
+			fluid={fluid || false}
+			className={styles.Section}
+		>
 			{children}
 		</Container>
 	);
