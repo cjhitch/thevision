@@ -1,0 +1,80 @@
+@import '../../assets/scss/colors';
+@import '../../assets/scss/mixins';
+.CardFlip {
+	@include mq('sm-down') {
+		max-height: 16.5rem;
+		> div {
+			max-height: 16.5rem;
+		}
+	}
+}
+.front,
+.back {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	cursor: pointer;
+	padding: 3rem;
+	border: 2px solid $dark_2;
+	text-align: center;
+	color: $light_0;
+	transform: rotateY(0);
+	transform-style: preserve-3d;
+	transition: 0.6s;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.back {
+	visibility: hidden;
+	transform: rotateY(180deg);
+	background-color: $primary;
+	border-color: transparent;
+	color: $dark_2;
+	padding: 3rem 1rem;
+}
+
+.flipWrap {
+	display: block;
+	position: relative;
+	transform-origin: 100% 213.5px;
+	&:hover {
+		div {
+			visibility: hidden;
+			transform: rotateY(180deg);
+			&:nth-of-type(2) {
+				visibility: visible;
+				transform: rotateY(0deg);
+			}
+		}
+	}
+}
+
+.flipped {
+	> div {
+		display: block;
+		position: relative;
+		transform-origin: 100% 213.5px;
+		div {
+			visibility: hidden;
+			transform: rotateY(180deg);
+			&:nth-of-type(2) {
+				visibility: visible;
+				transform: rotateY(0deg);
+			}
+		}
+	}
+}
+.flip {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}

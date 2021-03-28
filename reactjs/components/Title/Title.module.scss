@@ -5,6 +5,7 @@
 		'title'
 		'postTitle';
 	text-align: center;
+	margin-bottom: 3.25rem;
 }
 .title {
 	grid-area: title;
@@ -17,5 +18,5 @@
 .p {
 	grid-area: postTitle;
 	max-width: 35rem;
-	margin: 0 auto 1.5rem auto;
+	margin: 0 auto;
 }
