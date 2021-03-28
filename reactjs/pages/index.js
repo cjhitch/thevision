@@ -139,10 +139,11 @@ export default function Home() {
 										<i className="fad fa-quote-left mr-3"></i>
 										Sometimes all you need is direction.
 										With years of expertise in the industry
-										we can help with that. Our knowledge
-										will work hand in hand with your team to
-										provide valuable insight, and a clear
-										path to your goals
+										we can help with that. Whether you need
+										a clear path to your goals, help with
+										accessibility, or even SEO, Our
+										knowledge can help provide clear path to
+										your goals
 									</p>
 								}
 							/>
@@ -165,7 +166,8 @@ export default function Home() {
 										sound confusing don't worry. Here at
 										Visionary we take our industry proven
 										techniques to help you get your greatest
-										return on investment possible.
+										return on investment possible and drive
+										your revenue.
 									</p>
 								}
 							/>
