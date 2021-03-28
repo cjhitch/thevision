@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { Container, Row } from 'react-bootstrap';
+import Image from 'next/image';
+import { Container, Row, Col } from 'react-bootstrap';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
@@ -45,7 +46,7 @@ export default function Home() {
 			<Header scroll={scroll} />
 			<main>
 				<Hero />
-				<Section fluid className="bg-dark-0">
+				<Section fluid className="bg-dark-0" id="products">
 					<Title
 						title="We Develop Digital Products That Help Grow Your Business"
 						pre="Primary Product Offerings"
@@ -84,7 +85,7 @@ export default function Home() {
 								lg={3}
 								front={
 									<>
-										<i class="fad fa-mobile-android fa-4x mb-3"></i>
+										<i className="fad fa-mobile-android fa-4x mb-3"></i>
 										<h4>Mobile App</h4>
 									</>
 								}
@@ -105,7 +106,7 @@ export default function Home() {
 								lg={3}
 								front={
 									<>
-										<i class="fad fa-bags-shopping fa-4x mb-3"></i>
+										<i className="fad fa-bags-shopping fa-4x mb-3"></i>
 										<h4>Ecommerce</h4>
 									</>
 								}
@@ -128,7 +129,7 @@ export default function Home() {
 								lg={3}
 								front={
 									<>
-										<i class="fad fa-briefcase fa-4x mb-3"></i>
+										<i className="fad fa-briefcase fa-4x mb-3"></i>
 										<h4>Business Consultant</h4>
 									</>
 								}
@@ -138,10 +139,11 @@ export default function Home() {
 										<i className="fad fa-quote-left mr-3"></i>
 										Sometimes all you need is direction.
 										With years of expertise in the industry
-										we can help with that. Our knowledge
-										will work hand in hand with your team to
-										provide valuable insight, and a clear
-										path to your goals
+										we can help with that. Whether you need
+										a clear path to your goals, help with
+										accessibility, or even SEO, Our
+										knowledge can help provide clear path to
+										your goals
 									</p>
 								}
 							/>
@@ -151,7 +153,7 @@ export default function Home() {
 								lg={3}
 								front={
 									<>
-										<i class="fad fa-mail-bulk fa-4x mb-3"></i>
+										<i className="fad fa-mail-bulk fa-4x mb-3"></i>
 										<h4>Digital Marketing Service</h4>
 									</>
 								}
@@ -164,7 +166,8 @@ export default function Home() {
 										sound confusing don't worry. Here at
 										Visionary we take our industry proven
 										techniques to help you get your greatest
-										return on investment possible.
+										return on investment possible and drive
+										your revenue.
 									</p>
 								}
 							/>
@@ -174,7 +177,7 @@ export default function Home() {
 								lg={3}
 								front={
 									<>
-										<i class="fad fa-edit fa-4x mb-3"></i>
+										<i className="fad fa-edit fa-4x mb-3"></i>
 										<h4>Web Design</h4>
 									</>
 								}
@@ -193,6 +196,65 @@ export default function Home() {
 									</p>
 								}
 							/>
+						</Row>
+					</Container>
+				</Section>
+				<Section fluid id="about">
+					<Container>
+						<Row>
+							<Col sm={12} lg={6}>
+								<Image
+									src="/deco1.png"
+									layout="fill"
+									alt="technology in the palm of your hand and design boards"
+								/>
+							</Col>
+							<Col sm={12} lg={{ span: 6, order: 'first' }}>
+								<Title
+									alignment="left"
+									title="About Us - All Our Weird Quirks and Cool Stuff Too!"
+									titleClass="text-secondary"
+									pre="Welcome to Visionary Creatives"
+									preClass="text-dark-4"
+									post={
+										<>
+											<i
+												className={`fad fa-quote-left fa-sm mr-2 text-primary`}
+											></i>
+											<span>
+												Christopher started the company
+												in 2011 after beginning a
+												cleaning company. Finding a
+												website was necessary he worked
+												on learning that and quickly
+												fell in love. Years later, he
+												has helped hundreds of business
+												owners establish their online
+												presence and voice.
+											</span>
+											<br />
+											<br />
+											<span>
+												With over a decade of experience
+												in the web industry we have
+												worked on hundreds of websites.
+												Our expertise encompasses the
+												full gammit. With many
+												applications and websites
+												including architected APIs and
+												databases we have something for
+												everyone. Utilizing modern
+												technologies such as React and
+												Vue, whether you need ecommerce,
+												application development, web
+												design, or a new website we've
+												got you covered.
+											</span>
+										</>
+									}
+									postClass="text-dark-4"
+								/>
+							</Col>
 						</Row>
 					</Container>
 				</Section>
