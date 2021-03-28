@@ -1,0 +1,7 @@
+@import '../../assets/scss/mixins';
+.Section {
+	padding: 8rem 0;
+	@include mq('md-down') {
+		padding: 4rem 0;
+	}
+}
