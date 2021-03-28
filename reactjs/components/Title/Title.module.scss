@@ -1,0 +1,22 @@
+.Title {
+	display: grid;
+	grid-template-areas:
+		'preTitle'
+		'title'
+		'postTitle';
+	text-align: center;
+	margin-bottom: 3.25rem;
+}
+.title {
+	grid-area: title;
+	max-width: 45rem;
+	margin: 0 auto 1.5rem auto;
+}
+.pre {
+	grid-area: preTitle;
+}
+.p {
+	grid-area: postTitle;
+	max-width: 35rem;
+	margin: 0 auto;
+}
