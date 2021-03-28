@@ -3,7 +3,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
 	return (
-		<section className={styles.Hero}>
+		<section id="top" className={styles.Hero}>
 			<h1
 				className={`${styles.shadow} text-light-0 font-weight-normal h4`}
 			>

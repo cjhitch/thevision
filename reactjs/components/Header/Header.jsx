@@ -21,11 +21,14 @@ const Header = ({ scroll }) => {
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Nav className="mx-auto d-none d-lg-flex">
-					<Link href="/">
-						<a className={`${styles.link} h5`}>Home</a>
+					<Link href="#top">
+						<a className={`${styles.link} h5`}>Top</a>
 					</Link>
-					<Link href="/link">
-						<a className={`${styles.link} h5`}>Link</a>
+					<Link href="#products">
+						<a className={`${styles.link} h5`}>Products</a>
+					</Link>
+					<Link href="#about">
+						<a className={`${styles.link} h5`}>About</a>
 					</Link>
 				</Nav>
 				<div className="d-none d-lg-flex">
@@ -59,11 +62,14 @@ const Header = ({ scroll }) => {
 			>
 				<Modal.Header closeButton />
 				<Modal.Body>
-					<Link href="/">
-						<a className={`${styles.link} h3`}>Home</a>
+					<Link href="#top">
+						<a className={`${styles.link} h5`}>Top</a>
 					</Link>
-					<Link href="/link">
-						<a className={`${styles.link} h3`}>Link</a>
+					<Link href="#products">
+						<a className={`${styles.link} h5`}>Products</a>
+					</Link>
+					<Link href="#about">
+						<a className={`${styles.link} h5`}>About</a>
 					</Link>
 				</Modal.Body>
 			</Modal>

@@ -46,7 +46,7 @@ export default function Home() {
 			<Header scroll={scroll} />
 			<main>
 				<Hero />
-				<Section fluid className="bg-dark-0">
+				<Section fluid className="bg-dark-0" id="products">
 					<Title
 						title="We Develop Digital Products That Help Grow Your Business"
 						pre="Primary Product Offerings"
@@ -197,7 +197,7 @@ export default function Home() {
 						</Row>
 					</Container>
 				</Section>
-				<Section fluid>
+				<Section fluid id="about">
 					<Container>
 						<Row>
 							<Col sm={12} lg={6}>
