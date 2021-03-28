@@ -5,6 +5,7 @@
 	border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
 	position: absolute;
 	width: 100%;
+	z-index: 1020;
 }
 .nav {
 	padding: 0;
@@ -21,7 +22,7 @@
 	position: absolute;
 	right: 7.75rem;
 	width: 0;
-	padding: 0;
+	// padding: 0;
 	background: transparent;
 	overflow: hidden;
 	transition: width 500ms ease;

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
+import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import styles from '../styles/Home.module.scss';
+// import styles from '../styles/Home.module.scss';
 
 export default function Home() {
 	const [scroll, setScroll] = useState(false);
@@ -16,19 +17,22 @@ export default function Home() {
 
 	return (
 		<>
+			<Head>
+				<title>Create Next App</title>
+				<link rel="icon" href="/favicon.ico" />
+				<link
+					rel="stylesheet"
+					href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+					integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB"
+					crossOrigin="anonymous"
+				/>
+			</Head>
 			<Header scroll={scroll} />
-			<div className={styles.container}>
-				<Head>
-					<title>Create Next App</title>
-					<link rel="icon" href="/favicon.ico" />
-					<script
-						src="https://kit.fontawesome.com/c61156b3af.js"
-						crossOrigin="anonymous"
-					/>
-				</Head>
+			{/* <div className={styles.container}> */}
 
-				<main className={styles.main}>
-					<h1 className={styles.title}>
+			<main>
+				<Hero />
+				{/* <h1 className={styles.title}>
 						Welcome to <a href="https://nextjs.org">Next.js!</a>
 					</h1>
 
@@ -82,8 +86,8 @@ export default function Home() {
 							</p>
 						</a>
 					</div>
-				</main>
-			</div>
+				</div> */}
+			</main>
 			<Footer />
 		</>
 	);

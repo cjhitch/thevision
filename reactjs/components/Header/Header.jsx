@@ -13,7 +13,7 @@ const Header = ({ scroll }) => {
 					<a>
 						<Image
 							src="/logo-dark.svg"
-							width={scroll ? 120 : 190}
+							width={scroll ? 190 : 190}
 							height={scroll ? 45 : 65}
 						/>
 					</a>
