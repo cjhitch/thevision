@@ -31,15 +31,25 @@
 	p {
 		margin-bottom: 0;
 	}
+	i {
+		&::before {
+			color: $primary;
+		}
+	}
 }
 
 .back {
 	visibility: hidden;
 	transform: rotateY(180deg);
-	background-color: $primary;
-	border-color: transparent;
+	background-color: $light_1;
 	color: $dark_2;
+	border-color: transparent;
 	padding: 3rem 1rem;
+	i {
+		&::before {
+			color: $secondary;
+		}
+	}
 }
 
 .flipWrap {

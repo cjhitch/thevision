@@ -85,7 +85,7 @@ const Footer = () => {
 						<h3 className="h5 text-white">Quick Links</h3>
 						<Hr variant="secondary" />
 						<Link href="#">
-							<a className={styles.a}>Services</a>
+							<a className={styles.a}>Products</a>
 						</Link>
 						<Link href="#">
 							<a className={styles.a}>Reviews</a>

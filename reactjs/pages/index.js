@@ -36,11 +36,10 @@ export default function Home() {
 				<Hero />
 				<Section fluid className="bg-dark-0">
 					<Title
-						title="We Design Digital Products That Help Grow Businesses"
-						pre="Services We Are Offering"
+						title="We Develop Digital Products That Help Grow Your Business"
+						pre="Primary Product Offerings"
 						preClass="text-primary"
-						post="We are committed to providing our customers with exceptional service
-						while offering our employees the best training."
+						post="With years of experience and expertise in the industry, our products are tailor fit to provide all your digital needs"
 						postClass="text-light-0"
 						className="text-white"
 					/>
@@ -84,7 +83,8 @@ export default function Home() {
 										<i className="fad fa-quote-left mr-3"></i>
 										Is a new app in your future? We'll work
 										directly with you to establish your
-										needs, help with design, and see
+										needs, design and create, all the way
+										through training and setup.
 									</p>
 								}
 							/>
@@ -99,7 +99,17 @@ export default function Home() {
 									</>
 								}
 								className="mt-3 mt-lg-0"
-								back={<p></p>}
+								back={
+									<p>
+										<i className="fad fa-quote-left mr-3"></i>
+										Running a store can be complicated. On
+										your site it shouldn't be. We'll work
+										with you to set up products, variations,
+										sales, and even coupons. We set up your
+										ecommerce store so you can hit the
+										ground running
+									</p>
+								}
 							/>
 							<CardFlip
 								sm={1}
@@ -112,7 +122,17 @@ export default function Home() {
 									</>
 								}
 								className="mt-3"
-								back={<p></p>}
+								back={
+									<p>
+										<i className="fad fa-quote-left mr-3"></i>
+										Sometimes all you need is direction.
+										With years of expertise in the industry
+										we can help with that. Our knowledge
+										will work hand in hand with your team to
+										provide valuable insight, and a clear
+										path to your goals
+									</p>
+								}
 							/>
 							<CardFlip
 								sm={1}
@@ -125,7 +145,17 @@ export default function Home() {
 									</>
 								}
 								className="mt-3"
-								back={<p></p>}
+								back={
+									<p>
+										<i className="fad fa-quote-left mr-3"></i>
+										Pay per click, SEO, Social media
+										marketing, email campaigns, if these
+										sound confusing don't worry. Here at
+										Visionary we take our industry proven
+										techniques to help you get your greatest
+										return on investment possible.
+									</p>
+								}
 							/>
 							<CardFlip
 								sm={1}
@@ -138,7 +168,19 @@ export default function Home() {
 									</>
 								}
 								className="mt-3"
-								back={<p></p>}
+								back={
+									<p>
+										<i className="fad fa-quote-left mr-3"></i>
+										Whether your brand is existing or
+										non-existent, you need logos, print
+										design, email or layout, we've got you
+										covered. Your design is your voice and
+										the first thing your customers see. We
+										will help set your voice to match and
+										ensure everything looks as professional
+										as you are.
+									</p>
+								}
 							/>
 						</Row>
 					</Container>
