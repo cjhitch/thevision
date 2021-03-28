@@ -13,7 +13,8 @@
 	@include mq('sm-down') {
 		padding-top: 9rem;
 	}
-	min-height: 100vh;
+	height: 100vh;
+	max-height: 90rem;
 	overflow-x: hidden;
 	background-image: url('./brain.gif');
 	background-repeat: no-repeat;
