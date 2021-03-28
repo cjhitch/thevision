@@ -3,7 +3,7 @@
 .Hero {
 	@include mq('lg') {
 		display: grid;
-		grid-template-rows: minmax(9rem, 1fr) auto 41rem;
+		grid-template-rows: minmax(9rem, 1fr) auto minmax(41rem, 1.35fr);
 		justify-content: center;
 		align-items: center;
 	}
