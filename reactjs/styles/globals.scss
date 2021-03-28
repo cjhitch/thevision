@@ -12,3 +12,7 @@ $btn-padding-x-lg: 4rem;
 @import '~bootstrap/scss/bootstrap';
 
 @import '../assets/scss/inputs';
+
+li.active {
+	background-color: $primary;
+}
