@@ -86,6 +86,7 @@
 		}
 		a {
 			@include btn(transparent, $primary);
+			margin-left: 0 !important;
 		}
 	}
 	a {

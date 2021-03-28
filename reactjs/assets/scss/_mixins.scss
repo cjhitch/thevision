@@ -1,6 +1,6 @@
 @mixin btn($first, $second) {
 	background: linear-gradient(to right, $second, $second 50%, $first 50%);
-	border-left-width: 7px;
+	border-left-width: 0.4375rem;
 	background-size: 200% 100%;
 	background-position: 100%;
 	transition: background-position 500ms ease;
