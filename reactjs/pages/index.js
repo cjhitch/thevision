@@ -22,7 +22,18 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Create Next App</title>
+				<title>
+					Visionary Creatives | Web | Apps | Digital Marketing |
+					Design
+				</title>
+				<meta
+					http-equiv="Content-Type"
+					content="text/html; charset=utf-8"
+				/>
+				<meta
+					name="description"
+					content="Visionary Creatives is your premier stop for a new website, mobile app, web design and digital marketing services located in Las Vegas, Nevada"
+				/>
 				<link rel="icon" href="/favicon.ico" />
 				<link
 					rel="stylesheet"

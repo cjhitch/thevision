@@ -23,22 +23,34 @@ const Footer = () => {
 						</p>
 						<div className={styles.social}>
 							<Link href="https://www.facebook.com">
-								<a className="d-inline-block">
+								<a
+									aria-label="Go to Visionary Creatives Facebook page"
+									className="d-inline-block"
+								>
 									<FiFacebook size="1.5rem" />
 								</a>
 							</Link>
 							<Link href="https://www.facebook.com">
-								<a className="d-inline-block">
+								<a
+									aria-label="Go to Visionary Creatives Twitter page"
+									className="d-inline-block"
+								>
 									<FiTwitter size="1.5rem" />
 								</a>
 							</Link>
 							<Link href="https://www.facebook.com">
-								<a className="d-inline-block">
+								<a
+									aria-label="Go to Visionary Creatives Instagram"
+									className="d-inline-block"
+								>
 									<FiInstagram size="1.5rem" />
 								</a>
 							</Link>
 							<Link href="https://www.facebook.com">
-								<a className="d-inline-block">
+								<a
+									aria-label="Go to Visionary Creatives Linkedin page"
+									className="d-inline-block"
+								>
 									<FiLinkedin size="1.5rem" />
 								</a>
 							</Link>

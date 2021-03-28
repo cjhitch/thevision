@@ -10,11 +10,12 @@ const Header = ({ scroll }) => {
 		<header className={`${styles.Header} ${scroll ? styles.sticky : ''}`}>
 			<Navbar className={styles.nav}>
 				<Link href="/">
-					<a>
+					<a aria-label="navigate home">
 						<Image
 							src="/logo-dark.svg"
 							width={scroll ? 190 : 190}
 							height={scroll ? 45 : 65}
+							alt="Visionary Creatives lightbulb logo with company name title"
 						/>
 					</a>
 				</Link>
@@ -47,6 +48,7 @@ const Header = ({ scroll }) => {
 					variant="outline-dark-5"
 					onClick={() => setShow(true)}
 				>
+					<span className="sr-only">Open Menu</span>
 					<i aria-hidden className="fal fa-bars px-2 fa-lg" />
 				</Button>
 			</Navbar>
