@@ -1,14 +1,23 @@
 import PropTypes from 'prop-types';
 import styles from './Title.module.scss';
 
-const Title = ({ pre, preClass, title, titleClass, post, postClass, Tag }) => {
+const Title = ({
+	pre,
+	preClass,
+	title,
+	titleClass,
+	post,
+	postClass,
+	Tag,
+	className,
+}) => {
 	return (
-		<header className={styles.Title}>
+		<header className={`${styles.Title} ${className || ''}`}>
 			<Tag className={`${styles.title} ${titleClass || ''}`}>{title}</Tag>
 			{pre && (
-				<h3 className={`${styles.pre} ${preClass || ''}`}>{pre}</h3>
+				<h3 className={`${styles.pre} ${preClass || ''} h6`}>{pre}</h3>
 			)}
-			{post && <p className={`${styles.p} ${postClass || ''}`}>{pre}</p>}
+			{post && <p className={`${styles.p} ${postClass || ''}`}>{post}</p>}
 		</header>
 	);
 };
