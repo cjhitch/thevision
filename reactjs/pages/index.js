@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Products from '../components/Products';
+import Portfolio from '../components/Portfolio';
 import About from '../components/About';
 import Footer from '../components/Footer';
 // import styles from '../styles/Home.module.scss';
@@ -44,6 +45,7 @@ export default function Home() {
 			<main>
 				<Hero />
 				<Products />
+				<Portfolio />
 				<About />
 			</main>
 			<Footer />
