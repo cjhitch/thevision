@@ -19,34 +19,70 @@ const Portfolio = () => {
 				preClass="text-dark-2"
 			/>
 			<Container>
-				<SRLWrapper>
+				<SRLWrapper className={styles.srl}>
 					<Row>
 						<Col sm={2} lg={4}>
-							<Image src="/c1-1.png" fluid />
+							<Image
+								alt="Global asset management system, entire scss architecture with mixins and placeholders for consistency, multiple applications including video carousel, component library for reuse"
+								fluid
+								src="/c1-1.png"
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/ia-1.png" fluid />
+							<Image
+								alt="Frontend and backend Reactjs Build. Created entire API, architected database and set up Docker instance for project"
+								src="/ia-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/jav-1.png" fluid />
+							<Image
+								alt="Database and API architected using Sequelize. Mobile application for maintenance built and served on the app store"
+								src="/jav-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/lvp-1.png" fluid />
+							<Image
+								alt="One of many print designs created and printed."
+								src="/lvp-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/iss-1.png" fluid />
+							<Image
+								alt="Corporate website for ISS. Full functioning with secondary hover navigation. Fully responsive, mobile and accessibility friendly."
+								src="/iss-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/gcf-1.png" fluid />
+							<Image
+								alt="Full ecommerce site complete with subscription shipping and variations for custom furniture"
+								src="/gcf-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/kwr-1.png" fluid />
+							<Image
+								alt="Marathon listing site to find marathons anywhere in the world complete with third party ticketing"
+								src="/kwr-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/pff-1.png" fluid />
+							<Image
+								alt="Full car wrap designed and implemented on car. Can still be seen driving the streets of MN"
+								src="/pff-1.png"
+								fluid
+							/>
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/cap-1.png" fluid />
+							<Image
+								alt="Pokemon tracking and trading application with full API, database architecture, Redux store, and crud implementation"
+								src="/cap-1.png"
+								fluid
+							/>
 						</Col>
 					</Row>
 				</SRLWrapper>
