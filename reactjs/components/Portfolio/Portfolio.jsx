@@ -22,19 +22,31 @@ const Portfolio = () => {
 				<SRLWrapper>
 					<Row>
 						<Col sm={2} lg={4}>
-							<Image src="/ia-1.png" fluid />
+							<Image src="/c1-1.png" fluid />
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/c1-1.png" fluid />
+							<Image src="/ia-1.png" fluid />
 						</Col>
 						<Col sm={2} lg={4}>
 							<Image src="/jav-1.png" fluid />
 						</Col>
 						<Col sm={2} lg={4}>
-							<Image src="/pff-1.png" fluid />
+							<Image src="/lvp-1.png" fluid />
 						</Col>
 						<Col sm={2} lg={4}>
 							<Image src="/iss-1.png" fluid />
+						</Col>
+						<Col sm={2} lg={4}>
+							<Image src="/gcf-1.png" fluid />
+						</Col>
+						<Col sm={2} lg={4}>
+							<Image src="/kwr-1.png" fluid />
+						</Col>
+						<Col sm={2} lg={4}>
+							<Image src="/pff-1.png" fluid />
+						</Col>
+						<Col sm={2} lg={4}>
+							<Image src="/cap-1.png" fluid />
 						</Col>
 					</Row>
 				</SRLWrapper>
