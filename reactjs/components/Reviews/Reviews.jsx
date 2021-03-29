@@ -5,7 +5,11 @@ import styles from './Reviews.module.scss';
 
 const Reviews = () => {
 	return (
-		<Section fluid className={`${styles.Reviews} bg-dark-3 py-5`}>
+		<Section
+			id="reviews"
+			fluid
+			className={`${styles.Reviews} bg-dark-3 py-5`}
+		>
 			<Title
 				title="What Our Clients Have to Say"
 				titleClass="text-light-4"
