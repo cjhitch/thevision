@@ -1,3 +1,4 @@
+@import '../../assets/scss/colors';
 .Hr {
 	width: 4rem;
 	height: 0.1875rem;
@@ -15,12 +16,22 @@
 }
 
 .secondary {
-	background: rgb(220, 20, 141);
+	background: $secondary_darker;
 	background: linear-gradient(
 		90deg,
-		rgba(220, 20, 141, 1) 0%,
-		rgba(237, 64, 169, 1) 35%,
-		rgba(248, 190, 225, 1) 100%
+		$secondary_darker 0%,
+		$secondary 35%,
+		$secondary_subtle 100%
+	);
+}
+
+.primary {
+	background: $primary_darker;
+	background: linear-gradient(
+		90deg,
+		$primary_darker 0%,
+		$primary 35%,
+		$primary_subtle 100%
 	);
 }
 

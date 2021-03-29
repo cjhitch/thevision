@@ -3,4 +3,8 @@
 	border-right: none;
 	border-top: none;
 	border-radius: 0;
+	background-color: transparent;
+	&:focus {
+		background-color: transparent;
+	}
 }

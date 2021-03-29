@@ -72,22 +72,52 @@ const Header = ({ scroll }) => {
 				<Modal.Header closeButton />
 				<Modal.Body>
 					<Link href="#top">
-						<a className={`${styles.link} h5`}>Top</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3`}
+						>
+							Top
+						</a>
 					</Link>
 					<Link href="#products">
-						<a className={`${styles.link} h5`}>Products</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3 mt-3`}
+						>
+							Products
+						</a>
 					</Link>
 					<Link href="#portfolio">
-						<a className={`${styles.link} h5`}>Portfolio</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3 mt-3`}
+						>
+							Portfolio
+						</a>
 					</Link>
 					<Link href="#reviews">
-						<a className={`${styles.link} h5`}>Reviews</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3 mt-3`}
+						>
+							Reviews
+						</a>
 					</Link>
 					<Link href="#about">
-						<a className={`${styles.link} h5`}>About</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3 mt-3`}
+						>
+							About
+						</a>
 					</Link>
 					<Link href="#contact">
-						<a className={`${styles.link} h5`}>Contact</a>
+						<a
+							onClick={() => setShow(false)}
+							className={`${styles.link} h3 mt-3`}
+						>
+							Contact
+						</a>
 					</Link>
 				</Modal.Body>
 			</Modal>
