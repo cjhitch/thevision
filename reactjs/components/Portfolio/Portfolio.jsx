@@ -14,7 +14,7 @@ const Portfolio = () => {
 			id="portfolio"
 		>
 			<Title
-				title="We Did Stuff"
+				title="Our Recent Work"
 				titleClass="text-dark-0"
 				pre="A Look at Our Portfolio"
 				preClass="text-dark-2"
