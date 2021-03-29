@@ -6,6 +6,7 @@ import Products from '../components/Products';
 import Portfolio from '../components/Portfolio';
 import Reviews from '../components/Reviews';
 import About from '../components/About';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 // import styles from '../styles/Home.module.scss';
 
@@ -67,6 +68,7 @@ export default function Home() {
 				<Portfolio />
 				<Reviews />
 				<About />
+				<Contact />
 			</main>
 			<Footer />
 		</>
