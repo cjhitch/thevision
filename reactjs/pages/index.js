@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Products from '../components/Products';
 import Portfolio from '../components/Portfolio';
+import Reviews from '../components/Reviews';
 import About from '../components/About';
 import Footer from '../components/Footer';
 // import styles from '../styles/Home.module.scss';
@@ -64,6 +65,7 @@ export default function Home() {
 				<Hero />
 				<Products />
 				<Portfolio />
+				<Reviews />
 				<About />
 			</main>
 			<Footer />
