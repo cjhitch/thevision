@@ -27,12 +27,21 @@ const Header = ({ scroll }) => {
 					<Link href="#products">
 						<a className={`${styles.link} h5`}>Products</a>
 					</Link>
+					<Link href="#portfolio">
+						<a className={`${styles.link} h5`}>Portfolio</a>
+					</Link>
+					<Link href="#reviews">
+						<a className={`${styles.link} h5`}>Reviews</a>
+					</Link>
 					<Link href="#about">
 						<a className={`${styles.link} h5`}>About</a>
 					</Link>
+					<Link href="#contact">
+						<a className={`${styles.link} h5`}>Contact</a>
+					</Link>
 				</Nav>
 				<div className="d-none d-lg-flex">
-					<Form inline>
+					{/* <Form inline>
 						<Button variant="link">
 							<i aria-hidden className="fal fa-search" />
 						</Button>
@@ -41,7 +50,7 @@ const Header = ({ scroll }) => {
 							placeholder="Search"
 							className={`${styles.form} mr-sm-2`}
 						/>
-					</Form>
+					</Form> */}
 					<Button className={styles.button} variant="secondary">
 						Let&#39;s Begin
 					</Button>
@@ -68,8 +77,17 @@ const Header = ({ scroll }) => {
 					<Link href="#products">
 						<a className={`${styles.link} h5`}>Products</a>
 					</Link>
+					<Link href="#portfolio">
+						<a className={`${styles.link} h5`}>Portfolio</a>
+					</Link>
+					<Link href="#reviews">
+						<a className={`${styles.link} h5`}>Reviews</a>
+					</Link>
 					<Link href="#about">
 						<a className={`${styles.link} h5`}>About</a>
+					</Link>
+					<Link href="#contact">
+						<a className={`${styles.link} h5`}>Contact</a>
 					</Link>
 				</Modal.Body>
 			</Modal>
