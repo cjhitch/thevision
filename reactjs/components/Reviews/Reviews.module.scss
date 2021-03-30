@@ -1,12 +1,17 @@
+@import '../../assets/scss/mixins.scss';
 .Reviews {
 	background-image: url('../../assets/images/opaq-bg-lines.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .carousel {
 	h3 {
 		min-height: 5.3125rem;
+		@include mq('xs-only') {
+			min-height: 8.25rem;
+		}
 	}
 	ol {
 		bottom: -3.4375rem;

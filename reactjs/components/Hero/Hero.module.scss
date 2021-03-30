@@ -20,6 +20,15 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	@include mq('md-down') {
+		background-image: url('./brain.jpg');
+		height: inherit;
+		> .overlay {
+			height: inherit;
+			max-height: inherit;
+		}
+	}
 	h1 {
 		text-align: center;
 		grid-row-start: 2;
