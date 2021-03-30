@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col, Form, Button, Toast } from 'react-bootstrap';
 import Section from '../Section';
 import Title from '../Title';
@@ -14,6 +14,8 @@ const Contact = () => {
 		message: '',
 	});
 	const [showToast, setShowToast] = useState(false);
+	const [showErrToast, setErrShowToast] = useState(false);
+
 	const update = (e) => {
 		const {
 			target: { name, value },
@@ -31,16 +33,20 @@ const Contact = () => {
 			},
 			body: JSON.stringify(formInputs),
 		}).then((res) => {
-			console.log('Fetch: ', res);
+			console.log(res);
+			if (res.status === 200) {
+				setShowToast(true);
+				// setFormInputs({
+				// 	name: '',
+				// 	email: '',
+				// 	phone: '',
+				// 	subject: 'Choose...',
+				// 	message: '',
+				// });
+			} else {
+				setErrShowToast(true);
+			}
 		});
-		setShowToast(true);
-		// setFormInputs({
-		// 	name: '',
-		// 	email: '',
-		// 	phone: '',
-		// 	subject: 'Choose...',
-		// 	message: '',
-		// });
 	};
 
 	return (
@@ -183,6 +189,23 @@ const Contact = () => {
 							>
 								Submit
 							</Button>
+							<Toast
+								className={styles.toast}
+								show={showErrToast}
+								onClose={() => setErrShowToast(false)}
+								delay={3000}
+								autohide
+							>
+								<Toast.Header>
+									<strong className="mr-auto">
+										Sorry there was an error
+									</strong>
+									<small>Just Now</small>
+								</Toast.Header>
+								<Toast.Body>
+									Please try submitting your information again
+								</Toast.Body>
+							</Toast>
 							<Toast
 								className={styles.toast}
 								show={showToast}
