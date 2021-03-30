@@ -4,3 +4,6 @@
 .button {
 	@include btn(transparent, $primary);
 }
+.toast {
+	position: absolute;
+}

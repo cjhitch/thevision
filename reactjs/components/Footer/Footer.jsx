@@ -22,7 +22,7 @@ const Footer = () => {
 							your need.
 						</p>
 						<div className={styles.social}>
-							<Link href="https://www.facebook.com">
+							<Link href="https://www.facebook.com/VisionaryCreatives">
 								<a
 									aria-label="Go to Visionary Creatives Facebook page"
 									className="d-inline-block"
@@ -30,7 +30,7 @@ const Footer = () => {
 									<FiFacebook size="1.5rem" />
 								</a>
 							</Link>
-							<Link href="https://www.facebook.com">
+							<Link href="https://twitter.com/visionary_creat">
 								<a
 									aria-label="Go to Visionary Creatives Twitter page"
 									className="d-inline-block"
@@ -38,7 +38,7 @@ const Footer = () => {
 									<FiTwitter size="1.5rem" />
 								</a>
 							</Link>
-							<Link href="https://www.facebook.com">
+							<Link href="https://www.instagram.com">
 								<a
 									aria-label="Go to Visionary Creatives Instagram"
 									className="d-inline-block"
@@ -46,7 +46,7 @@ const Footer = () => {
 									<FiInstagram size="1.5rem" />
 								</a>
 							</Link>
-							<Link href="https://www.facebook.com">
+							<Link href="https://www.linkedin.com/company/visionary-creatives">
 								<a
 									aria-label="Go to Visionary Creatives Linkedin page"
 									className="d-inline-block"
@@ -86,29 +86,29 @@ const Footer = () => {
 								Las Vegas, Nevada
 							</a>
 						</Link>
-						<Button
-							className={styles.button}
-							variant="outline-secondary"
-						>
-							Send a Message
-						</Button>
+						<Link href="/#contact">
+							<Button
+								as="button"
+								className={styles.button}
+								variant="outline-secondary"
+							>
+								Send a Message
+							</Button>
+						</Link>
 					</Col>
 					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="h5 text-white">Quick Links</h3>
 						<Hr variant="secondary" />
-						<Link href="#">
+						<Link href="/#products">
 							<a className={styles.a}>Products</a>
 						</Link>
-						<Link href="#">
+						<Link href="/#reviews">
 							<a className={styles.a}>Reviews</a>
 						</Link>
-						<Link href="#">
-							<a className={styles.a}>Faq</a>
-						</Link>
-						<Link href="#">
+						<Link href="/privacy">
 							<a className={styles.a}>Privacy Policy</a>
 						</Link>
-						<Link href="#">
+						<Link href="/terms">
 							<a className={styles.a}>Terms & Conditions</a>
 						</Link>
 					</Col>
