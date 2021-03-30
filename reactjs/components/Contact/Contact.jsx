@@ -36,13 +36,13 @@ const Contact = () => {
 			console.log(res);
 			if (res.status === 200) {
 				setShowToast(true);
-				// setFormInputs({
-				// 	name: '',
-				// 	email: '',
-				// 	phone: '',
-				// 	subject: 'Choose...',
-				// 	message: '',
-				// });
+				setFormInputs({
+					name: '',
+					email: '',
+					phone: '',
+					subject: 'Choose...',
+					message: '',
+				});
 			} else {
 				setErrShowToast(true);
 			}
