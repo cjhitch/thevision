@@ -171,7 +171,7 @@ const Contact = () => {
 
 							<Form.Group controlId="message">
 								<Form.Label className="text-dark-2">
-									Example textarea
+									Leave Us a Message
 								</Form.Label>
 								<Form.Control
 									as="textarea"
