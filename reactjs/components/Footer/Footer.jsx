@@ -15,7 +15,12 @@ const Footer = () => {
 				<Row as="div">
 					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="sr-only">Logo</h3>
-						<Image src="/logo-dark.svg" width={190} height={65} />
+						<Image
+							alt="Visionary Creatives corporate dark logo"
+							src="/logo-dark.svg"
+							width={190}
+							height={65}
+						/>
 						<p className="mt-md-4">
 							Your premier stop for Web and App development.
 							Meticulously driven, each app is carefully fit to
