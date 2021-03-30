@@ -23,14 +23,24 @@ const Contact = () => {
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-		setShowToast(true);
-		setFormInputs({
-			name: '',
-			email: '',
-			phone: '',
-			subject: 'Choose...',
-			message: '',
+		fetch('/api/contact', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json, text/plain, */*',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(formInputs),
+		}).then((res) => {
+			console.log('Fetch: ', res);
 		});
+		setShowToast(true);
+		// setFormInputs({
+		// 	name: '',
+		// 	email: '',
+		// 	phone: '',
+		// 	subject: 'Choose...',
+		// 	message: '',
+		// });
 	};
 
 	return (
