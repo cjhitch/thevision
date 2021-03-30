@@ -2,13 +2,13 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 const mailerEmail =
-	process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-		? process.env.VERCEL_MAILER_EMAIL_ID
-		: process.env.MAILER_EMAIL_ID || 'auth_email_address@gmail.com';
+	process.env.NODE_ENV !== 'development'
+		? process.env.MAILER_EMAIL_ID || 'auth_email_address@gmail.com'
+		: process.env.VERCEL_MAILER_EMAIL_ID;
 const mailerPass =
-	process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-		? process.env.VERCEL_MAILER_PASSWORD
-		: process.env.MAILER_PASSWORD || 'auth_email_pass';
+	process.env.NODE_ENV !== 'development'
+		? process.env.MAILER_PASSWORD || 'auth_email_pass'
+		: process.env.VERCEL_MAILER_PASSWORD;
 
 export default (req, res) => {
 	const { name, email, phone, subject, message } = req.body;
