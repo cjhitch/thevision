@@ -1,6 +1,10 @@
 require('dotenv').config();
 const nodemailer = require('nodemailer');
 
+console.log('NODE_ENV: ', process.env.NODE_ENV);
+console.log('VERCEL_MAILER_EMAIL_ID: ', process.env.VERCEL_MAILER_EMAIL_ID);
+console.log('VERCEL_MAILER_PASSWORD: ', process.env.VERCEL_MAILER_PASSWORD);
+
 const mailerEmail =
 	process.env.NODE_ENV === 'production'
 		? process.env.VERCEL_MAILER_EMAIL_ID
