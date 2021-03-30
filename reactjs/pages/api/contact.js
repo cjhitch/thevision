@@ -14,7 +14,10 @@ export default (req, res) => {
 	const { name, email, phone, subject, message } = req.body;
 
 	const transporter = nodemailer.createTransport({
-		service: process.env.MAILER_SERVICE_PROVIDER || 'gmail',
+		// service: process.env.MAILER_SERVICE_PROVIDER || 'gmail',
+		host: process.env.MAILER_SERVICE_PROVIDER || 'smtp.gmail.com',
+		port: 465,
+		secure: true,
 		auth: {
 			user: mailerEmail,
 			pass: mailerPass,
