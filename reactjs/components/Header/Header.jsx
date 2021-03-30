@@ -21,22 +21,22 @@ const Header = ({ scroll }) => {
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Nav className="mx-auto d-none d-lg-flex">
-					<Link href="#top">
-						<a className={`${styles.link} h5`}>Top</a>
+					<Link href="/#top">
+						<a className={`${styles.link} h5`}>Home</a>
 					</Link>
-					<Link href="#products">
+					<Link href="/#products">
 						<a className={`${styles.link} h5`}>Products</a>
 					</Link>
-					<Link href="#portfolio">
+					<Link href="/#portfolio">
 						<a className={`${styles.link} h5`}>Portfolio</a>
 					</Link>
-					<Link href="#reviews">
+					<Link href="/#reviews">
 						<a className={`${styles.link} h5`}>Reviews</a>
 					</Link>
-					<Link href="#about">
+					<Link href="/#about">
 						<a className={`${styles.link} h5`}>About</a>
 					</Link>
-					<Link href="#contact">
+					<Link href="/#contact">
 						<a className={`${styles.link} h5`}>Contact</a>
 					</Link>
 				</Nav>
@@ -51,7 +51,11 @@ const Header = ({ scroll }) => {
 							className={`${styles.form} mr-sm-2`}
 						/>
 					</Form> */}
-					<Button className={styles.button} variant="secondary">
+					<Button
+						href="/#contact"
+						className={styles.button}
+						variant="secondary"
+					>
 						Let&#39;s Begin
 					</Button>
 				</div>
@@ -71,15 +75,15 @@ const Header = ({ scroll }) => {
 			>
 				<Modal.Header closeButton />
 				<Modal.Body>
-					<Link href="#top">
+					<Link href="/#top">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3`}
 						>
-							Top
+							Home
 						</a>
 					</Link>
-					<Link href="#products">
+					<Link href="/#products">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3 mt-3`}
@@ -87,7 +91,7 @@ const Header = ({ scroll }) => {
 							Products
 						</a>
 					</Link>
-					<Link href="#portfolio">
+					<Link href="/#portfolio">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3 mt-3`}
@@ -95,7 +99,7 @@ const Header = ({ scroll }) => {
 							Portfolio
 						</a>
 					</Link>
-					<Link href="#reviews">
+					<Link href="/#reviews">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3 mt-3`}
@@ -103,7 +107,7 @@ const Header = ({ scroll }) => {
 							Reviews
 						</a>
 					</Link>
-					<Link href="#about">
+					<Link href="/#about">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3 mt-3`}
@@ -111,7 +115,7 @@ const Header = ({ scroll }) => {
 							About
 						</a>
 					</Link>
-					<Link href="#contact">
+					<Link href="/#contact">
 						<a
 							onClick={() => setShow(false)}
 							className={`${styles.link} h3 mt-3`}

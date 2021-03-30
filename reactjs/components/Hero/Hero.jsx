@@ -30,7 +30,7 @@ const Hero = () => {
 					<Button
 						variant="primary"
 						className="text-white px-4"
-						href="#"
+						href="/#products"
 					>
 						Learn More
 					</Button>
@@ -40,16 +40,16 @@ const Hero = () => {
 						className={`${styles.shadow} display-1 text-light-4 font-weight-bolder`}
 					>
 						Digital Marketing
-						<br /> Service
+						<br /> Services
 					</h2>
 					<p className={`${styles.shadow} text-light-0 h4`}>
-						Tried and true proven strategies tailored to you,
-						period. Making the most of your budget for the best ROI
+						Need that or one of our many other expertieses? Let us
+						know so we can figure out how to best help you grow
 					</p>
 					<Button
 						variant="primary"
 						className="text-white px-4"
-						href="#"
+						href="/#contact"
 					>
 						Learn More
 					</Button>
@@ -62,14 +62,13 @@ const Hero = () => {
 						<br /> For You
 					</h2>
 					<p className={`${styles.shadow} text-light-0 h4`}>
-						We focus on your brand so you can focus on day-to-day.
-						Your site should be working as hard as you, we see to
-						that
+						We Employ proven strategies tailored to each business,
+						learn what other clients had to say about us
 					</p>
 					<Button
 						variant="primary"
 						className="text-white px-4"
-						href="#"
+						href="/#reviews"
 					>
 						Learn More
 					</Button>
