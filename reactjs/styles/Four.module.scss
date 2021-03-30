@@ -1,0 +1,18 @@
+@import '../assets/scss/colors';
+.container {
+	display: grid;
+	grid-template-rows: 7.8125rem 1fr auto;
+	min-height: 100vh;
+	background-color: $dark_3;
+	color: $light_0;
+	footer {
+		grid-row-start: 3;
+	}
+}
+.main {
+	grid-row-start: 2;
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+}
