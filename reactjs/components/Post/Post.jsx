@@ -1,5 +1,8 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import './Post.module.scss';
+import Head from 'next/head';
+import { Container, Row, Image } from 'react-bootstrap';
+import Title from '../Title';
+import Hr from '../Hr';
+import styles from './Post.module.scss';
 
 const Post = ({
 	meta,
@@ -11,6 +14,7 @@ const Post = ({
 	preClass,
 	post,
 	postClass,
+	children,
 }) => {
 	return (
 		<>
@@ -47,24 +51,41 @@ const Post = ({
 					}}
 				/>
 			</Head>
-			<Container fluid as="article">
-				<Container
-					as="section"
-					fluid
-					style={{ backgroundImage: url(imgSrc) }}
-				>
-					<Title
-						alignment={alignment || 'center'}
-						title={title}
-						titleClass={titleClass || ''}
-						pre={pre || false}
-						preClass={preClass || ''}
-						post={post || false}
-						postClass={postClass || ''}
-					/>
-				</Container>
+			<Container
+				className={styles.Hero}
+				as="section"
+				fluid
+				style={{ backgroundImage: `url(${imgSrc})` }}
+			>
+				<Title
+					className={styles.title}
+					alignment={alignment || 'center'}
+					title={title}
+					titleClass={titleClass || 'text-white'}
+					pre={pre || false}
+					preClass={preClass || ''}
+					post={post || false}
+					postClass={postClass || ''}
+				/>
+				<Hr variant="secondary" alignment="center" />
+			</Container>
+			<Container fluid as="article" className={styles.Post}>
 				<Container>
-					<Row>{children}</Row>
+					<Row>
+						<Image
+							className="my-4"
+							src="/chris.png"
+							roundedCircle
+						/>
+						<p className="h4 pt-md-5 pl-md-3">
+							Author: Christopher Hitchcock
+							<br />
+							<span className="h5">
+								Date: March, 30<sup>th</sup> 2021
+							</span>
+						</p>
+						{children}
+					</Row>
 				</Container>
 			</Container>
 		</>
