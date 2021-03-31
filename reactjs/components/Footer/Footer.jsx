@@ -120,6 +120,9 @@ const Footer = () => {
 					<Col xs={12} sm={6} lg={3} as="section">
 						<h3 className="h5 text-white">Recent Posts</h3>
 						<Hr variant="secondary" />
+						<Link href="/post/late-degree-hangups">
+							<a className={styles.a}>Degree Hangups</a>
+						</Link>
 					</Col>
 				</Row>
 			</Container>
