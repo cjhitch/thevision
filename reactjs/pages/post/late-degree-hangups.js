@@ -8,6 +8,7 @@ export default function Custom404() {
 		<div>
 			<Header />
 			<Post
+				meta="Hangups found in the late elements of the Web Development degree and how they were solved"
 				title="Navigating the Tricky Elements Near The End of the Web Degree"
 				imgSrc="/coding.jpg"
 			>
